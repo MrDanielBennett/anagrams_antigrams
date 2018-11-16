@@ -10,10 +10,10 @@ class Test
 
   if array1 == array2
     return "these are the same word"
-  elsif array1 != array2
-    return "these are not the same word"
-  end
-  if condition
+  # elsif array1 != array2
+  #   return "these are not the same word"
+elsif array1.all? {|i| array2.include?(i)}
+    return 'these words are anagrams'
 
   end
   end
