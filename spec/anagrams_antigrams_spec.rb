@@ -1,9 +1,10 @@
 require('rspec')
-require('scrabble')
+require('anagrams_antigrams')
 require('pry')
 
-describe('#scrabble') do
-  it("it returns a scrabble score for a letter")do
-    word1 = Word.new("a")
-    expect(word1.scrabble()).to(eq([1]))
+describe('#anagram') do
+  it("it checks to see if two words are the same")do
+    test1 = Test.new("cat", "cat")
+    expect(anagram?()).to(eq('these are the same word'))
   end
+end
