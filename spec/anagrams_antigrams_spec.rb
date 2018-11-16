@@ -13,7 +13,7 @@ describe('#anagram?') do
   end
   it("it checks to see if two words are actually 'words'(contain a vowel)") do
     test1 = Test.new("hjl", "ljh")
-    expect(test1.anagram?()).to(eq('please enter a real word'))
+    expect(test1.realword?()).to(eq('please enter a real word'))
   end
 
   # it("it checks to see if two words are different") do
