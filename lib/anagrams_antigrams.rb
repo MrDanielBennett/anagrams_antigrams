@@ -13,9 +13,9 @@ class Test
     array2 = @array2
     vowel_array = ['a', 'e', 'i', 'o', 'u', 'y']
     if vowel_array - array1 == vowel_array
-      return "please enter a real word"
+      return "please enter a real word."
     elsif vowel_array - array2 == vowel_array
-      return 'please enter a real word'
+      return 'please enter a real word.'
     else
       return
     end
@@ -25,13 +25,13 @@ class Test
     array1 = @array1
     array2 = @array2
     if array1 == array2
-      return "these are the same word"
+      return "these are the same word."
     elsif array1.all? {|i| array2.include?(i)}
-      return 'these words are anagrams'
+      return 'these words are anagrams.'
     elsif array1.none? {|i| array2.include?(i)}
-      return "these words are antigrams"
+      return "these words are antigrams."
     else
-      return "this combo is neither anagrams or antigrams"
+      return "this combo is neither anagrams or antigrams."
     end
   end
 end
