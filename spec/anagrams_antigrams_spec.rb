@@ -23,8 +23,8 @@ describe('#anagram?') do
     test1 = Test.new("world", "cat")
     expect(test1.anagram?()).to(eq('these words are antigrams'))
   end
-  it("it checks to see if two words are antigrams") do
-    test1 = Test.new("world wide", "wack")
-    expect(test1.anagram?()).to(eq('these words are antigrams'))
+  it("it checks to see if multiple words will pass the test") do
+    test1 = Test.new("cat man", "mancat")
+    expect(test1.anagram?()).to(eq('these words are anagrams'))
   end
 end
