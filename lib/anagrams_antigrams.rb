@@ -10,8 +10,8 @@ class Test
 
   if array1 == array2
     return "these are the same word"
-  elsif array1 != array2
-    return "these are not the same word"
+  # elsif array1 != array2
+  #   return "these are not the same word"
   end
   end
 end
