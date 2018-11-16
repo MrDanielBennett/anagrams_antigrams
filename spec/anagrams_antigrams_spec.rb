@@ -15,7 +15,10 @@ describe('#anagram?') do
     test1 = Test.new("hjl", "ljh")
     expect(test1.realword?()).to(eq('please enter a real word'))
   end
-
+  it("it lowercases all letters") do
+    test1 = Test.new("Cat", "CAT")
+    expect(test1.realword?()).to(eq('these are the same word'))
+  end
   # it("it checks to see if two words are different") do
   #   test1 = Test.new("cat", "dog")
   #   expect(test1.anagram?()).to(eq('these are not the same word'))
