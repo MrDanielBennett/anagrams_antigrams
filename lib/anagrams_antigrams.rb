@@ -13,5 +13,8 @@ class Test
   elsif array1 != array2
     return "these are not the same word"
   end
+  if condition
+
+  end
   end
 end
