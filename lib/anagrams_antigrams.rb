@@ -27,7 +27,10 @@ def anagram?
     return "these are the same word"
   elsif array1.all? {|i| array2.include?(i)}
     return 'these words are anagrams'
-
+  # elsif array1.none? {|i| array2.include?(i)}
+  #   return "these words are antigrams"
+  # else
+  #   return 'well shit'
 
   end
 end
